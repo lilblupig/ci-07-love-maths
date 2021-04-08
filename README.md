@@ -41,6 +41,8 @@ This section is to provide an brief insight into how the approach to the code st
 
 Commits were made as a minimum at once per tutorial, and these were pushed once a section was complete.
 
+The tutorial notes that the css and js files should be saved in separate folders, but advises that they will be left in the root folder for the duration of the project.
+
 ## Technologies Used
 
 ### **Languages**
