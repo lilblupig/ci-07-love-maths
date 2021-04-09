@@ -28,6 +28,8 @@ function runGame(gameType) {
 
     if (gameType === "addition") {
         displayAdditionQuestion(num1, num2);
+    } else if (gameType === "multiply") {
+        displayMultiplyQuestion(num1, num2);
     } else {
         alert(`Unknown game type ${gameType}`);
         throw `Unknown game type ${gameType}, aborting!`;
@@ -63,12 +65,14 @@ function calculateCorrectAnswer() {
         let operator = document.getElementById("operator").innerText;
 
         // Returns an array containing the correct answer, and then instructs the next game type, default is addtion
+
         if (operator === "+") {
             return [operand1 + operand2, "addition"];
         } else {
             alert(`Unimplemented operator ${operator}`);
             throw `Unimplemented operator ${operator}, aborting!`;
         }
+
 }
 
 function incrementScore() {
