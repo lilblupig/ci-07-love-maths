@@ -23,6 +23,8 @@ function runGame(gameType) {
     // Math.floor rounds down to the whole number
     // Generates numbers between 0 and 24 so add 1 (Use Math.ceiling instead?)
 
+    document.getElementById("answer-box").value = "";
+
     let num1 = Math.floor(Math.random() * 25) + 1;
     let num2 = Math.floor(Math.random() * 25) + 1;
 
