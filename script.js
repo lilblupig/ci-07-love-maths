@@ -9,13 +9,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 alert("You clicked Submit!");
             } else {
                 let gameType = this.getAttribute("data-type");
-                alert(`You clicked ${gameType}`);
+                runGame(gameType);
             }
         })
     }
+
+    runGame("addition");
 })
 
-function runGame() {
+function runGame(gameType) {
     // Generate two random numbers between 1 and 25
     // Math.random generates random numbers between 0 and 1
     // Math.floor rounds down to the whole number
